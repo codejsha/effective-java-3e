@@ -38,9 +38,28 @@ public class NutritionFacts {
         this.carbohydrate = carbohydrate;
     }
 
-    public static void main(String[] args) {
-        var cocaCola =
-                new NutritionFacts(240, 8, 100, 0, 35, 27);
+    public int getServingSize() {
+        return servingSize;
+    }
+
+    public int getServings() {
+        return servings;
+    }
+
+    public int getCalories() {
+        return calories;
+    }
+
+    public int getFat() {
+        return fat;
+    }
+
+    public int getSodium() {
+        return sodium;
+    }
+
+    public int getCarbohydrate() {
+        return carbohydrate;
     }
 
 }

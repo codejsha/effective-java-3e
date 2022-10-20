@@ -9,6 +9,10 @@ public class Calzone extends Pizza {
         sauceInside = builder.sauceInside;
     }
 
+    public boolean isSauceInside() {
+        return sauceInside;
+    }
+
     @Override
     public String toString() {
         return String.format("Calzone with %s and sauce on the %s",

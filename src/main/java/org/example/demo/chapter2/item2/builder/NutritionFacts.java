@@ -10,17 +10,36 @@ public class NutritionFacts {
     private final int carbohydrate;
 
     private NutritionFacts(Builder builder) {
-        servingSize = builder.servingSize;
-        servings = builder.servings;
-        calories = builder.calories;
-        fat = builder.fat;
-        sodium = builder.sodium;
-        carbohydrate = builder.carbohydrate;
+        this.servingSize = builder.servingSize;
+        this.servings = builder.servings;
+        this.calories = builder.calories;
+        this.fat = builder.fat;
+        this.sodium = builder.sodium;
+        this.carbohydrate = builder.carbohydrate;
     }
 
-    public static void main(String[] args) {
-        var cocaCola = new NutritionFacts.Builder(240, 8)
-                .calories(100).sodium(35).carbohydrate(27).build();
+    public int getServingSize() {
+        return servingSize;
+    }
+
+    public int getServings() {
+        return servings;
+    }
+
+    public int getCalories() {
+        return calories;
+    }
+
+    public int getFat() {
+        return fat;
+    }
+
+    public int getSodium() {
+        return sodium;
+    }
+
+    public int getCarbohydrate() {
+        return carbohydrate;
     }
 
     public static class Builder {

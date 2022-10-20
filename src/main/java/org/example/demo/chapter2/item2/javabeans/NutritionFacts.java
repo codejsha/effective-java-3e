@@ -13,34 +13,48 @@ public class NutritionFacts {
     public NutritionFacts() {
     }
 
-    public static void main(String[] args) {
-        var cocaCola = new NutritionFacts();
-        cocaCola.setServingSize(240);
-        cocaCola.setServings(8);
-        cocaCola.setCalories(100);
-        cocaCola.setSodium(35);
-        cocaCola.setCarbohydrate(27);
+    public int getServingSize() {
+        return servingSize;
     }
 
-    // Setters
     public void setServingSize(int val) {
         servingSize = val;
+    }
+
+    public int getServings() {
+        return servings;
     }
 
     public void setServings(int val) {
         servings = val;
     }
 
+    public int getCalories() {
+        return calories;
+    }
+
     public void setCalories(int val) {
         calories = val;
+    }
+
+    public int getFat() {
+        return fat;
     }
 
     public void setFat(int val) {
         fat = val;
     }
 
+    public int getSodium() {
+        return sodium;
+    }
+
     public void setSodium(int val) {
         sodium = val;
+    }
+
+    public int getCarbohydrate() {
+        return carbohydrate;
     }
 
     public void setCarbohydrate(int val) {

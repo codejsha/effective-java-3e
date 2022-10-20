@@ -11,6 +11,10 @@ public class NyPizza extends Pizza {
         size = builder.size;
     }
 
+    public Size getSize() {
+        return size;
+    }
+
     @Override
     public String toString() {
         return "New York Pizza with " + toppings;
