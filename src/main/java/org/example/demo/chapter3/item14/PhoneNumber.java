@@ -58,7 +58,7 @@ public final class PhoneNumber implements Cloneable, Comparable<PhoneNumber> {
     public boolean equals(Object o) {
         if (o == this)
             return true;
-        if (!(o instanceof effectivejava.chapter3.item11.PhoneNumber))
+        if (!(o instanceof org.example.demo.chapter3.item11.PhoneNumber))
             return false;
         var pn = (PhoneNumber) o;
         return pn.lineNum == lineNum && pn.prefix == prefix

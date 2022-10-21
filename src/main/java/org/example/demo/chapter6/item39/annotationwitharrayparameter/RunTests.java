@@ -1,6 +1,6 @@
 package org.example.demo.chapter6.item39.annotationwitharrayparameter;
 
-import effectivejava.chapter6.item39.markerannotation.Test;
+import org.example.demo.chapter6.item39.markerannotation.Test;
 
 import java.lang.reflect.InvocationTargetException;
 

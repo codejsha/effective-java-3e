@@ -1,6 +1,6 @@
 package org.example.demo.chapter6.item34;
 
-import static effectivejava.chapter6.item34.PayrollDay.PayType.*;
+import static org.example.demo.chapter6.item34.PayrollDay.PayType.*;
 
 // The strategy enum pattern (Page 166)
 enum PayrollDay {
