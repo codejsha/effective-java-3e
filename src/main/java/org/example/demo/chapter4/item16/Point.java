@@ -1,5 +1,6 @@
 package org.example.demo.chapter4.item16;
 
+// Code 16-2
 // Encapsulation of data by accessor methods and mutators  (Page 78)
 class Point {
     private double x;
