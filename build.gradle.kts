@@ -35,11 +35,12 @@ repositories {
 }
 
 dependencies {
-    implementation("org.projectlombok:lombok:1.18.24")
+    implementation("jakarta.validation:jakarta.validation-api:3.0.2")
     implementation("org.slf4j:slf4j-api:2.0.3")
     implementation("org.apache.logging.log4j:log4j-api:2.19.0")
     implementation("org.apache.logging.log4j:log4j-core:2.19.0")
     implementation("org.apache.logging.log4j:log4j-slf4j2-impl:2.19.0")
+    implementation("org.projectlombok:lombok:1.18.24")
     implementation("com.google.guava:guava:31.1-jre")
     implementation("org.javatuples:javatuples:1.2")
     implementation("org.openjdk.jmh:jmh-core:1.35")
