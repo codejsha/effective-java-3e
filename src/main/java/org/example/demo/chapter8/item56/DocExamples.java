@@ -6,7 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 // Documentation comment examples (Pages 255-9)
-public class DocExamples<E> {
+class DocExamples<E> {
     // Method comment (Page 255)
 
     /**

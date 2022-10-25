@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Objects;
 
 // Typesafe heterogeneous container pattern (Pages 151-4)
-public class Favorites {
+class Favorites {
     private Map<Class<?>, Object> favorites = new HashMap<>();
 
     public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class Favorites {
                 favoriteInteger, favoriteClass.getName());
     }
 
-    public <T> void putFavorite(Class<T> type, T instance) {
+    private <T> void putFavorite(Class<T> type, T instance) {
         favorites.put(Objects.requireNonNull(type), instance);
     }
 
@@ -29,7 +29,7 @@ public class Favorites {
     //        favorites.put(Objects.requireNonNull(type), type.cast(instance));
     //    }
 
-    public <T> T getFavorite(Class<T> type) {
+    private <T> T getFavorite(Class<T> type) {
         return type.cast(favorites.get(type));
     }
 }

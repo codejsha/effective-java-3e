@@ -2,7 +2,7 @@ package org.example.demo.chapter9.item60;
 
 import java.math.BigDecimal;
 
-public class BigDecimalChange {
+class BigDecimalChange {
     public static void main(String[] args) {
         final var TEN_CENTS = new BigDecimal(".10");
 

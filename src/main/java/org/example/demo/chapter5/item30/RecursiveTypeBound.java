@@ -5,9 +5,9 @@ import java.util.Collection;
 import java.util.Objects;
 
 // Using a recursive type bound to express mutual comparability (Pages 137-8)
-public class RecursiveTypeBound {
+class RecursiveTypeBound {
     // Returns max value in a collection - uses recursive type bound
-    public static <E extends Comparable<E>> E max(Collection<E> c) {
+    private static <E extends Comparable<E>> E max(Collection<E> c) {
         if (c.isEmpty())
             throw new IllegalArgumentException("Empty collection");
 

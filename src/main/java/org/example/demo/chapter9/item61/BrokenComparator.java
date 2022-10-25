@@ -3,7 +3,7 @@ package org.example.demo.chapter9.item61;
 import java.util.Comparator;
 
 // Broken comparator - can you spot the flaw? - Page 273
-public class BrokenComparator {
+class BrokenComparator {
     public static void main(String[] args) {
 
         //        Comparator<Integer> naturalOrder =

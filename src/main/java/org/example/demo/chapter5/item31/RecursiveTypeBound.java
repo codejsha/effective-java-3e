@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 
 // Using a recursive type bound with wildcards (Page 143)
-public class RecursiveTypeBound {
-    public static <E extends Comparable<? super E>> E max(
+class RecursiveTypeBound {
+    private static <E extends Comparable<? super E>> E max(
             List<? extends E> list) {
         if (list.isEmpty())
             throw new IllegalArgumentException("Empty list");

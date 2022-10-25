@@ -1,6 +1,6 @@
 package org.example.demo.chapter9.item60;
 
-public class Change {
+class Change {
     // Broken - uses floating point for monetary calculation!
     public static void main(String[] args) {
         var funds = 1.00;

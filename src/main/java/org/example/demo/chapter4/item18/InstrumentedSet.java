@@ -6,10 +6,10 @@ import java.util.List;
 import java.util.Set;
 
 // Wrapper class - uses composition in place of inheritance  (Page 90)
-public class InstrumentedSet<E> extends ForwardingSet<E> {
+class InstrumentedSet<E> extends ForwardingSet<E> {
     private int addCount = 0;
 
-    public InstrumentedSet(Set<E> s) {
+    private InstrumentedSet(Set<E> s) {
         super(s);
     }
 
@@ -31,7 +31,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
         return super.addAll(c);
     }
 
-    public int getAddCount() {
+    int getAddCount() {
         return addCount;
     }
 }

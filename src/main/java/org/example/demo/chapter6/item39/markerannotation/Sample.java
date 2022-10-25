@@ -1,7 +1,7 @@
 package org.example.demo.chapter6.item39.markerannotation;
 
 // Program containing marker annotations (Page 181)
-public class Sample {
+class Sample {
     @Test
     public static void m1() {
     }        // Test should pass

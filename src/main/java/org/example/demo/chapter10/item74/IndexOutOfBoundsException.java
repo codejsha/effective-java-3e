@@ -1,6 +1,6 @@
 package org.example.demo.chapter10.item74;
 
-public class IndexOutOfBoundsException extends RuntimeException {
+class IndexOutOfBoundsException extends RuntimeException {
     private final int lowerBound;
     private final int upperBound;
     private final int index;

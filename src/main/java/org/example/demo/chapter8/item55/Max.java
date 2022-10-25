@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.Optional;
 
 // Using Optional<T> as a return type (Pages 249-251)
-public class Max {
+class Max {
     //    // Returns maximum value in collection - throws exception if empty (Page 249)
     //    public static <E extends Comparable<E>> E max(Collection<E> c) {
     //        if (c.isEmpty())
@@ -35,7 +35,7 @@ public class Max {
     //    }
 
     // Returns max val in collection as Optional<E> - uses stream (Page 250)
-    public static <E extends Comparable<E>>
+    private static <E extends Comparable<E>>
     Optional<E> max(Collection<E> c) {
         return c.stream().max(Comparator.naturalOrder());
     }

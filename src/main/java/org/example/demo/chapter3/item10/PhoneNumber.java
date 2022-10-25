@@ -1,7 +1,7 @@
 package org.example.demo.chapter3.item10;
 
 // Class with a typical equals method (Page 48)
-public final class PhoneNumber {
+final class PhoneNumber {
     private final short areaCode, prefix, lineNum;
 
     public PhoneNumber(int areaCode, int prefix, int lineNum) {

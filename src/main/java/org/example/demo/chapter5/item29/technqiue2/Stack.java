@@ -5,12 +5,12 @@ import org.example.demo.chapter5.item29.EmptyStackException;
 import java.util.Arrays;
 
 // Generic stack using Object[] (Pages 130-3)
-public class Stack<E> {
+class Stack<E> {
     private static final int DEFAULT_INITIAL_CAPACITY = 16;
     private Object[] elements;
     private int size = 0;
 
-    public Stack() {
+    private Stack() {
         elements = new Object[DEFAULT_INITIAL_CAPACITY];
     }
 
@@ -23,13 +23,13 @@ public class Stack<E> {
             System.out.println(stack.pop().toUpperCase());
     }
 
-    public void push(E e) {
+    void push(E e) {
         ensureCapacity();
         elements[size++] = e;
     }
 
     // Appropriate suppression of unchecked warning
-    public E pop() {
+    E pop() {
         if (size == 0)
             throw new EmptyStackException();
 
@@ -41,7 +41,7 @@ public class Stack<E> {
         return result;
     }
 
-    public boolean isEmpty() {
+    boolean isEmpty() {
         return size == 0;
     }
 

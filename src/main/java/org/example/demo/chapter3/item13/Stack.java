@@ -3,12 +3,12 @@ package org.example.demo.chapter3.item13;
 import java.util.Arrays;
 
 // A cloneable version of Stack (Pages 60-61)
-public class Stack implements Cloneable {
+class Stack implements Cloneable {
     private static final int DEFAULT_INITIAL_CAPACITY = 16;
     private Object[] elements;
     private int size = 0;
 
-    public Stack() {
+    private Stack() {
         this.elements = new Object[DEFAULT_INITIAL_CAPACITY];
     }
 
@@ -25,12 +25,12 @@ public class Stack implements Cloneable {
             System.out.print(copy.pop() + " ");
     }
 
-    public void push(Object e) {
+    private void push(Object e) {
         ensureCapacity();
         elements[size++] = e;
     }
 
-    public Object pop() {
+    private Object pop() {
         if (size == 0)
             throw new EmptyStackException();
         var result = elements[--size];
@@ -38,7 +38,7 @@ public class Stack implements Cloneable {
         return result;
     }
 
-    public boolean isEmpty() {
+    private boolean isEmpty() {
         return size == 0;
     }
 

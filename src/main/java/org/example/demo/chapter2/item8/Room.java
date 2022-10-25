@@ -3,7 +3,7 @@ package org.example.demo.chapter2.item8;
 import java.lang.ref.Cleaner;
 
 // An autocloseable class using a cleaner as a safety net (Page 32)
-public class Room implements AutoCloseable {
+class Room implements AutoCloseable {
     private static final Cleaner cleaner = Cleaner.create();
     // The state of this room, shared with our cleanable
     private final State state;
@@ -22,9 +22,9 @@ public class Room implements AutoCloseable {
 
     // Resource that requires cleaning. Must not refer to Room!
     private static class State implements Runnable {
-        int numJunkPiles; // Number of junk piles in this room
+        private int numJunkPiles; // Number of junk piles in this room
 
-        State(int numJunkPiles) {
+        private State(int numJunkPiles) {
             this.numJunkPiles = numJunkPiles;
         }
 

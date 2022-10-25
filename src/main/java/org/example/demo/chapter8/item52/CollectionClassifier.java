@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.*;
 
 // Broken! - What does this program print?  (Page 238)
-public class CollectionClassifier {
+class CollectionClassifier {
     public static String classify(Set<?> s) {
         return "Set";
     }
@@ -13,7 +13,7 @@ public class CollectionClassifier {
         return "List";
     }
 
-    public static String classify(Collection<?> c) {
+    private static String classify(Collection<?> c) {
         return "Unknown Collection";
     }
 

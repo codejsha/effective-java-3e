@@ -6,11 +6,11 @@ import java.util.List;
 import java.util.Random;
 
 // Wildcard type for parameter that serves as an T producer (page 141)
-public class Chooser<T> {
+class Chooser<T> {
     private final List<T> choiceList;
     private final Random rnd = new Random();
 
-    public Chooser(Collection<? extends T> choices) {
+    private Chooser(Collection<? extends T> choices) {
         choiceList = new ArrayList<>(choices);
     }
 
@@ -23,7 +23,7 @@ public class Chooser<T> {
         }
     }
 
-    public T choose() {
+    T choose() {
         return choiceList.get(rnd.nextInt(choiceList.size()));
     }
 }

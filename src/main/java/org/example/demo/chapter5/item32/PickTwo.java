@@ -4,13 +4,13 @@ import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
 // Subtle heap pollution (Pages 147-8)
-public class PickTwo {
+class PickTwo {
     // UNSAFE - Exposes a reference to its generic parameter array!
-    static <T> T[] toArray(T... args) {
+    private static <T> T[] toArray(T... args) {
         return args;
     }
 
-    static <T> T[] pickTwo(T a, T b, T c) {
+    private static <T> T[] pickTwo(T a, T b, T c) {
         switch (ThreadLocalRandom.current().nextInt(3)) {
             case 0:
                 return toArray(a, b);

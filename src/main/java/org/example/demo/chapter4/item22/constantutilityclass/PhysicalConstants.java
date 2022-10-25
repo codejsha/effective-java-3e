@@ -1,7 +1,7 @@
 package org.example.demo.chapter4.item22.constantutilityclass;
 
 // Constant utility class (Page 108)
-public class PhysicalConstants {
+class PhysicalConstants {
     // Avogadro's number (1/mol)
     public static final double AVOGADROS_NUMBER = 6.022_140_857e23;
     // Boltzmann constant (J/K)

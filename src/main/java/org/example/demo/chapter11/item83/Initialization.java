@@ -1,7 +1,7 @@
 package org.example.demo.chapter11.item83;
 
 // Initialization styles - Pages 333-
-public class Initialization {
+class Initialization {
 
     // Normal initialization of an instance field4 - Page 282
     private final FieldType field1 = computeFieldValue();
@@ -49,6 +49,6 @@ public class Initialization {
 
     // Lazy initialization holder class idiom for static fields - Page 334
     private static class FieldHolder {
-        static final FieldType field = computeFieldValue();
+        private static final FieldType field = computeFieldValue();
     }
 }

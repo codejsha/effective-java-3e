@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 // Frequency table implemented with map.merge, using lambda and method reference (Page 197)
-public class Freq {
+class Freq {
     public static void main(String[] args) {
         Map<String, Integer> frequencyTable = new TreeMap<>();
 

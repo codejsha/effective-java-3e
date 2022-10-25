@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Generating the Cartesian product of two lists using iteration and streams (Page 209)
-public class Card {
+class Card {
     private static final List<Card> NEW_DECK = newDeck();
     private final Suit suit;
     private final Rank rank;
-    public Card(Suit suit, Rank rank) {
+    private Card(Suit suit, Rank rank) {
         this.suit = suit;
         this.rank = rank;
 

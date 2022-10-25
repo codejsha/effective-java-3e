@@ -19,7 +19,7 @@ enum PayrollDay {
             System.out.printf("%-10s%d%n", day, day.pay(8 * 60, 1));
     }
 
-    int pay(int minutesWorked, int payRate) {
+    private int pay(int minutesWorked, int payRate) {
         return payType.pay(minutesWorked, payRate);
     }
 
@@ -41,7 +41,7 @@ enum PayrollDay {
 
         abstract int overtimePay(int mins, int payRate);
 
-        int pay(int minsWorked, int payRate) {
+        private int pay(int minsWorked, int payRate) {
             var basePay = minsWorked * payRate;
             return basePay + overtimePay(minsWorked, payRate);
         }

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Safe method with a generic varargs parameter (page 149)
-public class FlattenWithVarargs {
+class FlattenWithVarargs {
     @SafeVarargs
-    static <T> List<T> flatten(List<? extends T>... lists) {
+    private static <T> List<T> flatten(List<? extends T>... lists) {
         List<T> result = new ArrayList<>();
         for (var list : lists)
             result.addAll(list);

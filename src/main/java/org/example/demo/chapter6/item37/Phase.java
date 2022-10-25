@@ -49,7 +49,7 @@ public enum Phase {
             this.to = to;
         }
 
-        public static Transition from(Phase from, Phase to) {
+        private static Transition from(Phase from, Phase to) {
             return m.get(from).get(to);
         }
     }

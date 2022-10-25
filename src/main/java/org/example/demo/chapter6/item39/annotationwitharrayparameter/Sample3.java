@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Program containing an annotation with an array parameter (Page 185)
-public class Sample3 {
+class Sample3 {
     // This variant can process annotations whose parameter is a single element (identical to those on page 183)
     @ExceptionTest(ArithmeticException.class)
     public static void m1() {  // Test should pass

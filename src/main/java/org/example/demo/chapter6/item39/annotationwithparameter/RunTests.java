@@ -5,7 +5,7 @@ import org.example.demo.chapter6.item39.markerannotation.Test;
 import java.lang.reflect.InvocationTargetException;
 
 // Program to process marker annotations and annotations with a parameter (Page 184)
-public class RunTests {
+class RunTests {
     public static void main(String[] args) throws Exception {
         var tests = 0;
         var passed = 0;

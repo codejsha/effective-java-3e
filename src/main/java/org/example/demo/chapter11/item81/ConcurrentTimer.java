@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executor;
 
 // Simple framework for timing concurrent execution 327
-public class ConcurrentTimer {
+class ConcurrentTimer {
     private ConcurrentTimer() {
     } // Noninstantiable
 

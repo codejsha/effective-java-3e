@@ -3,12 +3,12 @@ package org.example.demo.chapter5.item30;
 import java.util.function.UnaryOperator;
 
 // Generic singleton factory pattern (Page 136-7)
-public class GenericSingletonFactory {
+class GenericSingletonFactory {
     // Generic singleton factory pattern
     private static UnaryOperator<Object> IDENTITY_FN = (t) -> t;
 
     @SuppressWarnings("unchecked")
-    public static <T> UnaryOperator<T> identityFunction() {
+    private static <T> UnaryOperator<T> identityFunction() {
         return (UnaryOperator<T>) IDENTITY_FN;
     }
 

@@ -9,9 +9,9 @@ import static java.util.stream.Collectors.toSet;
 
 // Simplistic class representing a plant (Page 171)
 class Plant {
-    final String name;
-    final LifeCycle lifeCycle;
-    Plant(String name, LifeCycle lifeCycle) {
+    private final String name;
+    private final LifeCycle lifeCycle;
+    private Plant(String name, LifeCycle lifeCycle) {
         this.name = name;
         this.lifeCycle = lifeCycle;
     }

@@ -7,7 +7,7 @@ import java.util.Comparator;
 import static java.util.Comparator.comparingInt;
 
 // Sorting with function objects (Pages 193-4)
-public class SortFourWays {
+class SortFourWays {
     public static void main(String[] args) {
         var words = Arrays.asList(args);
 

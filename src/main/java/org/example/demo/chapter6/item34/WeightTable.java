@@ -1,7 +1,7 @@
 package org.example.demo.chapter6.item34;
 
 // Takes earth-weight and prints table of weights on all planets (Page 160)
-public class WeightTable {
+class WeightTable {
     public static void main(String[] args) {
         var earthWeight = Double.parseDouble(args[0]);
         var mass = earthWeight / Planet.EARTH.surfaceGravity();

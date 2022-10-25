@@ -7,13 +7,13 @@ import static org.example.demo.chapter12.Util.deserialize;
 import static org.example.demo.chapter12.Util.serialize;
 
 // Deserialization bomb - deserializing this stream takes forever - Page 340
-public class DeserializationBomb {
+class DeserializationBomb {
     public static void main(String[] args) throws Exception {
         System.out.println(bomb().length);
         deserialize(bomb());
     }
 
-    static byte[] bomb() {
+    private static byte[] bomb() {
         Set<Object> root = new HashSet<>();
         var s1 = root;
         Set<Object> s2 = new HashSet<>();

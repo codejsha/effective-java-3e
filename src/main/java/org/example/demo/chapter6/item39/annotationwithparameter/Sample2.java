@@ -1,7 +1,7 @@
 package org.example.demo.chapter6.item39.annotationwithparameter;
 
 // Program containing annotations with a parameter (Page 183)
-public class Sample2 {
+class Sample2 {
     @ExceptionTest(ArithmeticException.class)
     public static void m1() {  // Test should pass
         var i = 0;

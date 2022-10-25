@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 // Immutable class that uses defensive copying
-public final class Period implements Serializable {
+final class Period implements Serializable {
     private final Date start;
     private final Date end;
 
@@ -56,7 +56,7 @@ public final class Period implements Serializable {
         private final Date start;
         private final Date end;
 
-        SerializationProxy(Period p) {
+        private SerializationProxy(Period p) {
             this.start = p.start;
             this.end = p.end;
         }

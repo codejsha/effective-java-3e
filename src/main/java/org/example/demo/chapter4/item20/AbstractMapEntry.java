@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Objects;
 
 // Skeletal implementation class (Pages 102-3)
-public abstract class AbstractMapEntry<K, V>
+abstract class AbstractMapEntry<K, V>
         implements Map.Entry<K, V> {
     // Entries in a modifiable map must override this method
     @Override

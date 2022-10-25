@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Set;
 
 // Reflective instantiaion demo (Page 283)
-public class ReflectiveInstantiation {
+class ReflectiveInstantiation {
     // Reflective instantiation with interface access
     public static void main(String[] args) {
         // Translate the class name into a Class object

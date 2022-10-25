@@ -1,7 +1,7 @@
 package org.example.demo.chapter7.item45;
 
 // Refrain from using streams to process char values (Page 206)
-public class CharStream {
+class CharStream {
     public static void main(String[] args) {
         // Does not produce the expected result
         "Hello world!".chars().forEach(System.out::print);

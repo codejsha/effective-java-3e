@@ -1,7 +1,7 @@
 package org.example.demo.chapter2.item2.javabeans;
 
 // JavaBeans Pattern - allows inconsistency, mandates mutability  (pages 11-12)
-public class NutritionFacts {
+class NutritionFacts {
     // Parameters initialized to default values (if any)
     private int servingSize = -1; // Required; no default value
     private int servings = -1; // Required; no default value

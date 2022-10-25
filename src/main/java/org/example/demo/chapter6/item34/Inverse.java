@@ -1,8 +1,8 @@
 package org.example.demo.chapter6.item34;
 
 // Switch on an enum to simulate a missing method (Page 167)
-public class Inverse {
-    public static Operation inverse(Operation op) {
+class Inverse {
+    private static Operation inverse(Operation op) {
         switch (op) {
             case PLUS:
                 return Operation.MINUS;

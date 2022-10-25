@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 // What does this program print? (Page 241)
-public class SetList {
+class SetList {
     public static void main(String[] args) {
         Set<Integer> set = new TreeSet<>();
         List<Integer> list = new ArrayList<>();

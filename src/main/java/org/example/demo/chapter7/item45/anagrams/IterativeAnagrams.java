@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.*;
 
 // Prints all large anagram groups in a dictionary iteratively (Page 204)
-public class IterativeAnagrams {
+class IterativeAnagrams {
     public static void main(String[] args) throws IOException {
         var dictionary = new File(args[0]);
         var minGroupSize = Integer.parseInt(args[1]);

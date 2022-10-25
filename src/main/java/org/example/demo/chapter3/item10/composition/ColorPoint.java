@@ -6,7 +6,7 @@ import org.example.demo.chapter3.item10.Point;
 import java.util.Objects;
 
 // Adds a value component without violating the equals contract (page 44)
-public class ColorPoint {
+class ColorPoint {
     private final Point point;
     private final Color color;
 

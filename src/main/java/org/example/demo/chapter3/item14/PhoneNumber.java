@@ -9,7 +9,7 @@ import java.util.concurrent.ThreadLocalRandom;
 import static java.util.Comparator.comparingInt;
 
 // Making PhoneNumber comparable (Pages 69-70)
-public final class PhoneNumber implements Cloneable, Comparable<PhoneNumber> {
+final class PhoneNumber implements Cloneable, Comparable<PhoneNumber> {
     // Comparable with comparator construction methods (page 70)
     private static final Comparator<PhoneNumber> COMPARATOR =
             comparingInt((PhoneNumber pn) -> pn.areaCode)
@@ -17,7 +17,7 @@ public final class PhoneNumber implements Cloneable, Comparable<PhoneNumber> {
                     .thenComparingInt(pn -> pn.lineNum);
     private final short areaCode, prefix, lineNum;
 
-    public PhoneNumber(int areaCode, int prefix, int lineNum) {
+    private PhoneNumber(int areaCode, int prefix, int lineNum) {
         this.areaCode = rangeCheck(areaCode, 999, "area code");
         this.prefix = rangeCheck(prefix, 999, "prefix");
         this.lineNum = rangeCheck(lineNum, 9999, "line num");

@@ -4,11 +4,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 // Can you spot the bug? (Page 188)
-public class Bigram {
+class Bigram {
     private final char first;
     private final char second;
 
-    public Bigram(char first, char second) {
+    private Bigram(char first, char second) {
         this.first = first;
         this.second = second;
     }

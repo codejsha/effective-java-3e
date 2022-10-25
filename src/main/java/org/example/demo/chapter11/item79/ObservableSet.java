@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 // Broken - invokes alien method from synchronized block!
-public class ObservableSet<E> extends ForwardingSet<E> {
+class ObservableSet<E> extends ForwardingSet<E> {
     // Thread-safe observable set with CopyOnWriteArrayList
     private final List<SetObserver<E>> observers =
             new CopyOnWriteArrayList<>();

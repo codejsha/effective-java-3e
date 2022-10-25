@@ -4,10 +4,10 @@ import org.example.demo.chapter3.item10.Color;
 import org.example.demo.chapter3.item10.Point;
 
 // Attempting to add a value component to Point (Page 41)
-public class ColorPoint extends Point {
+class ColorPoint extends Point {
     private final Color color;
 
-    public ColorPoint(int x, int y, Color color) {
+    private ColorPoint(int x, int y, Color color) {
         super(x, y);
         this.color = color;
     }

@@ -4,11 +4,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 // Fixed Bigram class (Page 189)
-public class Bigram2 {
+class Bigram2 {
     private final char first;
     private final char second;
 
-    public Bigram2(char first, char second) {
+    private Bigram2(char first, char second) {
         this.first = first;
         this.second = second;
     }

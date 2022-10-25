@@ -1,8 +1,8 @@
 package org.example.demo.chapter9.item61;
 
 // What does this program do? - Page 274
-public class Unbelievable {
-    static Integer i;
+class Unbelievable {
+    private static Integer i;
 
     public static void main(String[] args) {
         if (i == 42)

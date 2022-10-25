@@ -1,7 +1,7 @@
 package org.example.demo.chapter11.item84;
 
 // Awful CountDownLatch implementation - busy-waits incessantly!  - Pages 336-7
-public class SlowCountDownLatch {
+class SlowCountDownLatch {
     private int count;
 
     public SlowCountDownLatch(int count) {

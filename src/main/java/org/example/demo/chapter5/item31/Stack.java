@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.EmptyStackException;
 
 // Generic stack with bulk methods using wildcard types (Pages 139-41)
-public class Stack<E> {
+class Stack<E> {
     private static final int DEFAULT_INITIAL_CAPACITY = 16;
     private E[] elements;
     private int size = 0;
@@ -15,7 +15,7 @@ public class Stack<E> {
     // This is sufficient to ensure type safety, but the runtime
     // type of the array won't be E[]; it will always be Object[]!
     @SuppressWarnings("unchecked")
-    public Stack() {
+    private Stack() {
         elements = (E[]) new Object[DEFAULT_INITIAL_CAPACITY];
     }
 
@@ -31,12 +31,12 @@ public class Stack<E> {
         System.out.println(objects);
     }
 
-    public void push(E e) {
+    private void push(E e) {
         ensureCapacity();
         elements[size++] = e;
     }
 
-    public E pop() {
+    private E pop() {
         if (size == 0)
             throw new EmptyStackException();
         var result = elements[--size];
@@ -44,7 +44,7 @@ public class Stack<E> {
         return result;
     }
 
-    public boolean isEmpty() {
+    private boolean isEmpty() {
         return size == 0;
     }
 
@@ -66,13 +66,13 @@ public class Stack<E> {
     //    }
 
     // Wildcard type for parameter that serves as an E producer
-    public void pushAll(Iterable<? extends E> src) {
+    void pushAll(Iterable<? extends E> src) {
         for (E e : src)
             push(e);
     }
 
     // Wildcard type for parameter that serves as an E consumer
-    public void popAll(Collection<? super E> dst) {
+    void popAll(Collection<? super E> dst) {
         while (!isEmpty())
             dst.add(pop());
     }

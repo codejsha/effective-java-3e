@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.EmptyStackException;
 
 // Can you spot the "memory leak"?  (Pages 26-27)
-public class Stack {
+class Stack {
     private static final int DEFAULT_INITIAL_CAPACITY = 16;
     private Object[] elements;
     private int size = 0;
 
-    public Stack() {
+    private Stack() {
         elements = new Object[DEFAULT_INITIAL_CAPACITY];
     }
 
@@ -22,12 +22,12 @@ public class Stack {
             System.err.println(stack.pop());
     }
 
-    public void push(Object e) {
+    private void push(Object e) {
         ensureCapacity();
         elements[size++] = e;
     }
 
-    public Object pop() {
+    private Object pop() {
         if (size == 0)
             throw new EmptyStackException();
         return elements[--size];

@@ -1,7 +1,7 @@
 package org.example.demo.chapter2.item2.hierarchicalbuilder;
 
 // Subclass with hierarchical builder (Page 15)
-public class Calzone extends Pizza {
+class Calzone extends Pizza {
     private final boolean sauceInside;
 
     private Calzone(Builder builder) {

@@ -1,9 +1,9 @@
 package org.example.demo.chapter8.item53;
 
 // Sample uses of varargs (Pages 245-6)
-public class Varargs {
+class Varargs {
     // Simple use of varargs (Page 245)
-    static int sum(int... args) {
+    private static int sum(int... args) {
         var sum = 0;
         for (var arg : args)
             sum += arg;
@@ -22,7 +22,7 @@ public class Varargs {
     //    }
 
     // The right way to use varargs to pass one or more arguments (Page 246)
-    static int min(int firstArg, int... remainingArgs) {
+    private static int min(int firstArg, int... remainingArgs) {
         var min = firstArg;
         for (var arg : remainingArgs)
             if (arg < min)

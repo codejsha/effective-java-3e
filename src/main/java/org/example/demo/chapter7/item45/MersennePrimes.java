@@ -7,8 +7,8 @@ import static java.math.BigInteger.ONE;
 import static java.math.BigInteger.TWO;
 
 // Generating the first twent Mersenne primes using streams (Page 208)
-public class MersennePrimes {
-    static Stream<BigInteger> primes() {
+class MersennePrimes {
+    private static Stream<BigInteger> primes() {
         return Stream.iterate(TWO, BigInteger::nextProbablePrime);
     }
 

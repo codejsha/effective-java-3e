@@ -8,7 +8,7 @@ import java.util.Arrays;
 import static java.util.stream.Collectors.groupingBy;
 
 // Tasteful use of streams enhances clarity and conciseness (Page 205)
-public class HybridAnagrams {
+class HybridAnagrams {
     public static void main(String[] args) throws IOException {
         var dictionary = Paths.get(args[0]);
         var minGroupSize = Integer.parseInt(args[1]);

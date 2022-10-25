@@ -1,6 +1,6 @@
 package org.example.demo.chapter9.item60;
 
-public class IntChange {
+class IntChange {
     public static void main(String[] args) {
         var itemsBought = 0;
         var funds = 100;

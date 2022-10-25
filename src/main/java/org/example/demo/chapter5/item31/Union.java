@@ -4,9 +4,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 // Generic union method with wildcard types for enhanced flexibility (Pages 142-3)
-public class Union {
-    public static <E> Set<E> union(Set<? extends E> s1,
-                                   Set<? extends E> s2) {
+class Union {
+    private static <E> Set<E> union(Set<? extends E> s1,
+                                    Set<? extends E> s2) {
         Set<E> result = new HashSet<E>(s1);
         result.addAll(s2);
         return result;

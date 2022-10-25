@@ -5,11 +5,11 @@ import java.util.Set;
 import java.util.TreeSet;
 
 // Single-field Comparable with object reference field  (Page 69)
-public final class CaseInsensitiveString
+final class CaseInsensitiveString
         implements Comparable<CaseInsensitiveString> {
     private final String s;
 
-    public CaseInsensitiveString(String s) {
+    private CaseInsensitiveString(String s) {
         this.s = Objects.requireNonNull(s);
     }
 

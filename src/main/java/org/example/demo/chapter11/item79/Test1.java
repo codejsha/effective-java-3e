@@ -3,7 +3,7 @@ package org.example.demo.chapter11.item79;
 import java.util.HashSet;
 
 // Simple test of ObservableSet - Page 318
-public class Test1 {
+class Test1 {
     public static void main(String[] args) {
         var set =
                 new ObservableSet<Integer>(new HashSet<>());

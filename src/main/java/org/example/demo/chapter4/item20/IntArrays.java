@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Objects;
 
 // Concrete implementation built atop skeletal implementation (Page 101)
-public class IntArrays {
-    static List<Integer> intArrayAsList(int[] a) {
+class IntArrays {
+    private static List<Integer> intArrayAsList(int[] a) {
         Objects.requireNonNull(a);
 
         // The diamond operator is only legal here in Java 9 and later

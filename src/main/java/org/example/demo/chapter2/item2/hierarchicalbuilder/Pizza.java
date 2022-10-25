@@ -9,9 +9,9 @@ import java.util.Set;
 // Note that the underlying "simulated self-type" idiom  allows for arbitrary fluid hierarchies, not just builders
 
 public abstract class Pizza {
-    protected final Set<Topping> toppings;
+    final Set<Topping> toppings;
 
-    public Pizza(Builder<?> builder) {
+    Pizza(Builder<?> builder) {
         toppings = builder.toppings.clone(); // See Item 50
     }
 
@@ -22,7 +22,7 @@ public abstract class Pizza {
     public enum Topping {HAM, MUSHROOM, ONION, PEPPER, SAUSAGE}
 
     abstract static class Builder<T extends Builder<T>> {
-        EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class);
+        private EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class);
 
         public T addTopping(Topping topping) {
             toppings.add(Objects.requireNonNull(topping));

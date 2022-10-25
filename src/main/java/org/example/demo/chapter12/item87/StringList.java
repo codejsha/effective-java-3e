@@ -6,12 +6,12 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 // StringList with a reasonable custom serialized form  - Page 349
-public final class StringList implements Serializable {
+final class StringList implements Serializable {
     private transient int size = 0;
     private transient Entry head = null;
 
     // Appends the specified string to the list
-    public final void add(String s) {
+    private void add(String s) {
     }
 
     /**
@@ -43,8 +43,8 @@ public final class StringList implements Serializable {
 
     // No longer Serializable!
     private static class Entry {
-        String data;
-        Entry next;
+        private String data;
+        private Entry next;
         Entry previous;
     }
 

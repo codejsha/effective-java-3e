@@ -3,7 +3,7 @@ package org.example.demo.chapter2.item2.hierarchicalbuilder;
 import java.util.Objects;
 
 // Subclass with hierarchical builder (Page 15)
-public class NyPizza extends Pizza {
+class NyPizza extends Pizza {
     private final Size size;
 
     private NyPizza(Builder builder) {

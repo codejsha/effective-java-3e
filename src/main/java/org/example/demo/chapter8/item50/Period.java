@@ -3,7 +3,7 @@ package org.example.demo.chapter8.item50;
 import java.util.Date;
 
 // Broken "immutable" time period class (Pages 231-3)
-public final class Period {
+final class Period {
     private final Date start;
     private final Date end;
 

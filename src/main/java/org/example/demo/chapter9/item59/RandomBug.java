@@ -3,11 +3,11 @@ package org.example.demo.chapter9.item59;
 import java.util.Random;
 
 // Random number generation is hard! - Page 215
-public class RandomBug {
+class RandomBug {
     // Common but deeply flawed!
-    static Random rnd = new Random();
+    private static Random rnd = new Random();
 
-    static int random(int n) {
+    private static int random(int n) {
         return Math.abs(rnd.nextInt()) % n;
     }
 

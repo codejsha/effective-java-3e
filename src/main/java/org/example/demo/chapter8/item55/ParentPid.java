@@ -1,7 +1,7 @@
 package org.example.demo.chapter8.item55;
 
 // Avoiding unnecessary use of Optional's isPresent method (Page 252)
-public class ParentPid {
+class ParentPid {
     public static void main(String[] args) {
         var ph = ProcessHandle.current();
 

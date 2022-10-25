@@ -9,7 +9,7 @@ import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.*;
 
 // Frequency table examples showing improper and proper use of stream (Page 210-11)
-public class Freq {
+class Freq {
     public static void main(String[] args) throws FileNotFoundException {
         var file = new File(args[0]);
 

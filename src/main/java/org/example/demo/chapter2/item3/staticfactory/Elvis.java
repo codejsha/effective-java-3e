@@ -1,7 +1,7 @@
 package org.example.demo.chapter2.item3.staticfactory;
 
 // Singleton with static factory (Page 17)
-public class Elvis {
+class Elvis {
     private static final Elvis INSTANCE = new Elvis();
 
     private Elvis() {

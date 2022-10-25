@@ -3,14 +3,13 @@ package org.example.demo.chapter4.item23.taggedclass;
 // Tagged class - vastly inferior to a class hierarchy! (Page 109)
 class Figure {
     // Tag field - the shape of this figure
-    final Shape shape;
+    private final Shape shape;
 
-    ;
     // These fields are used only if shape is RECTANGLE
-    double length;
-    double width;
+    private double length;
+    private double width;
     // This field is used only if shape is CIRCLE
-    double radius;
+    private double radius;
 
     // Constructor for circle
     Figure(double radius) {
@@ -26,14 +25,11 @@ class Figure {
     }
 
     double area() {
-        switch (shape) {
-            case RECTANGLE:
-                return length * width;
-            case CIRCLE:
-                return Math.PI * (radius * radius);
-            default:
-                throw new AssertionError(shape);
-        }
+        return switch (shape) {
+            case RECTANGLE -> length * width;
+            case CIRCLE -> Math.PI * (radius * radius);
+            default -> throw new AssertionError(shape);
+        };
     }
 
     enum Shape {RECTANGLE, CIRCLE}

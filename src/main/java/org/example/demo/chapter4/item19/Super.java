@@ -1,12 +1,12 @@
 package org.example.demo.chapter4.item19;
 
 // Class whose constructor invokes an overridable method. NEVER DO THIS! (Page 95)
-public class Super {
+class Super {
     // Broken - constructor invokes an overridable method
-    public Super() {
+    Super() {
         overrideMe();
     }
 
-    public void overrideMe() {
+    void overrideMe() {
     }
 }

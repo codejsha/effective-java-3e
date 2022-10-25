@@ -4,7 +4,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 // Concurrent canonicalizing map atop ConcurrentMap - Pages 273-274
-public class Intern {
+class Intern {
     // Concurrent canonicalizing map atop ConcurrentMap - not optimal
     private static final ConcurrentMap<String, String> map =
             new ConcurrentHashMap<>();

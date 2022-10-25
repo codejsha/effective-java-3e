@@ -1,7 +1,7 @@
 package org.example.demo.chapter2.item2.builder;
 
 // Builder Pattern  (Page 13)
-public class NutritionFacts {
+class NutritionFacts {
     private final int servingSize;
     private final int servings;
     private final int calories;

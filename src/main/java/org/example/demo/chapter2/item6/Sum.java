@@ -1,7 +1,7 @@
 package org.example.demo.chapter2.item6;
 
 // Hideously slow program! Can you spot the object creation? (Page 24)
-public class Sum {
+class Sum {
     private static long sum() {
         Long sum = 0L;
         for (long i = 0; i <= Integer.MAX_VALUE; i++)

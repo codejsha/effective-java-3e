@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.EnumSet;
 
 // Same bug as NestIteration.java (but different symptom)!! - Page 213
-public class DiceRolls {
+class DiceRolls {
     public static void main(String[] args) {
         // Same bug, different symptom!
         Collection<Face> faces = EnumSet.allOf(Face.class);

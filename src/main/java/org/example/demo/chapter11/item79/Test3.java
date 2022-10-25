@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 
 // Simple test of ObservableSet - Page 319
-public class Test3 {
+class Test3 {
     public static void main(String[] args) {
         var set =
                 new ObservableSet<Integer>(new HashSet<>());

@@ -5,13 +5,13 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-public class Card {
-    static Collection<Suit> suits = Arrays.asList(Suit.values());
-    static Collection<Rank> ranks = Arrays.asList(Rank.values());
+class Card {
+    private static Collection<Suit> suits = Arrays.asList(Suit.values());
+    private static Collection<Rank> ranks = Arrays.asList(Rank.values());
     private final Suit suit;
     private final Rank rank;
 
-    Card(Suit suit, Rank rank) {
+    private Card(Suit suit, Rank rank) {
         this.suit = suit;
         this.rank = rank;
     }

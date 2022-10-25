@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.Objects;
 
 // Broken - violates symmetry!  (Page 39)
-public final class CaseInsensitiveString {
+final class CaseInsensitiveString {
     private final String s;
 
-    public CaseInsensitiveString(String s) {
+    private CaseInsensitiveString(String s) {
         this.s = Objects.requireNonNull(s);
     }
 

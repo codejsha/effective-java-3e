@@ -7,9 +7,9 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 // Two ways to generate a stream of all the sublists of a list (Pages 219-20)
-public class SubLists {
+class SubLists {
     // Returns a stream of all the sublists of its input list (Page 219)
-    public static <E> Stream<List<E>> of(List<E> list) {
+    private static <E> Stream<List<E>> of(List<E> list) {
         return Stream.concat(Stream.of(Collections.emptyList()),
                 prefixes(list).flatMap(SubLists::suffixes));
     }

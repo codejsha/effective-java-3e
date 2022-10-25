@@ -31,7 +31,7 @@ public enum Operation {
         return symbol;
     }
 
-    public double apply(double x, double y) {
+    private double apply(double x, double y) {
         return op.applyAsDouble(x, y);
     }
 }

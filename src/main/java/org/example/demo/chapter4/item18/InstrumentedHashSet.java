@@ -5,11 +5,11 @@ import java.util.HashSet;
 import java.util.List;
 
 // Broken - Inappropriate use of inheritance! (Page 87)
-public class InstrumentedHashSet<E> extends HashSet<E> {
+class InstrumentedHashSet<E> extends HashSet<E> {
     // The number of attempted element insertions
     private int addCount = 0;
 
-    public InstrumentedHashSet() {
+    private InstrumentedHashSet() {
     }
 
     public InstrumentedHashSet(int initCap, float loadFactor) {
@@ -34,7 +34,7 @@ public class InstrumentedHashSet<E> extends HashSet<E> {
         return super.addAll(c);
     }
 
-    public int getAddCount() {
+    int getAddCount() {
         return addCount;
     }
 }

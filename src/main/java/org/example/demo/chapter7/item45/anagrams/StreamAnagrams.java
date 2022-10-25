@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import static java.util.stream.Collectors.groupingBy;
 
 // Overuse of streams - don't do this! (page 205)
-public class StreamAnagrams {
+class StreamAnagrams {
     public static void main(String[] args) throws IOException {
         var dictionary = Paths.get(args[0]);
         var minGroupSize = Integer.parseInt(args[1]);

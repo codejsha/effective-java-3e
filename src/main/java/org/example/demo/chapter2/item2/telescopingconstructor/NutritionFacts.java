@@ -1,7 +1,7 @@
 package org.example.demo.chapter2.item2.telescopingconstructor;
 
 // Telescoping constructor pattern - does not scale well! (Pages 10-11)
-public class NutritionFacts {
+class NutritionFacts {
     private final int servingSize;  // (mL)            required
     private final int servings;     // (per container) required
     private final int calories;     // (per serving)   optional
